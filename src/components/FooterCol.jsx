@@ -12,7 +12,7 @@ const ColStyle = styled.div`
     margin-bottom: 1rem;
   }
   a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: ${({ theme }) => theme.colors.secondary};
   }
 `;

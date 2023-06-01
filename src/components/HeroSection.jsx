@@ -38,7 +38,6 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     font-size: 2rem;
-    //margin-top: 10rem;
     margin-bottom: -16rem;
     position: relative;
     color: ${({ theme }) => theme.colors.secondary};
@@ -123,9 +122,6 @@ const HeroStyles = styled.div`
     .hero__social {
      display: none
     }
-    .hero__scrollDown {
-        //display: none
-    }
   }
 `;
 
@@ -165,6 +161,15 @@ const HeroSection = () => {
                                         rel="noopener noreferrer"
                                     >
                                         GH
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://twitter.com/webcifar"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        ME
                                     </a>
                                 </li>
                             </ul>

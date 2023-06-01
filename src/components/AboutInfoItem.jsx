@@ -10,7 +10,7 @@ const AboutItemStyles = styled.div`
   /* gap: 5rem; */
   margin-top: 3rem;
   .title {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     color: ${({ theme }) => theme.colors.secondary};
   }
   .items {
@@ -34,6 +34,7 @@ const AboutItemStyles = styled.div`
     }
     .title {
       font-size: 2rem;
+      margin-right: 50px;
     }
   }
 `;
@@ -44,7 +45,7 @@ export default function AboutInfoItem({
 }) {
     return (
         <AboutItemStyles>
-            <h1 className="title">{title}</h1>
+            <h1 className="title">{title}</h1>          
             <div className="items">
                 {items.map((item, index) => (
                     <div className="item" key={index}>

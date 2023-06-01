@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MdEmail, MdLocalPhone } from 'react-icons/md';
-import ContactForm from './ContactForm';
+import { BsLinkedin, BsGithub, BsMedium } from 'react-icons/bs'
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
 
@@ -57,12 +57,14 @@ export default function ContactSection() {
                 <SectionTitle heading="contact" subheading="get in touch" />
                 <div className="contactSection__wrapper">
                     <div className="left">
-                        <ContactInfoItem icon={<MdLocalPhone />} text="+8801231" />
-                        <ContactInfoItem icon={<MdEmail />} text="webcifar@gmail.com" />
-                        <ContactInfoItem text="Chittagong, Bangladesh" />
+                        <ContactInfoItem icon={<BsLinkedin />} text="LinkedIn" link='https://www.linkedin.com/in/lucassingh/' />
+                        <ContactInfoItem icon={<BsGithub />} text="GitHub" link='https://github.com/lucassingh' />
+                        <ContactInfoItem icon={<BsMedium />} text="Medium" link='' />
                     </div>
                     <div className="right">
-                        <ContactForm />
+                        <ContactInfoItem icon={<MdLocalPhone />} text="+5493462565888" />
+                        <ContactInfoItem icon={<MdEmail />} text="lucas.singh10@gmail.com" />
+                        <ContactInfoItem text="Venado Tuerto, Santa Fe,  Argentina" link='https://goo.gl/maps/iJakYCMJZvQkbf1eA' />
                     </div>
                 </div>
             </div>

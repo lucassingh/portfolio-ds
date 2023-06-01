@@ -19,7 +19,7 @@ const FooterStyle = styled.div`
     flex: 1;
   }
   .footer__col1__title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     color: ${({ theme }) => theme.colors.secondary};
   }
@@ -58,11 +58,10 @@ export default function Footer() {
         <FooterStyle>
             <div className="container">
                 <div className="footer__col1">
-                    <h1 className="footer__col1__title">Ayan Khan</h1>
+                    <h1 className="footer__col1__title">Lucas Singh</h1>
                     <PText>
-                        A freelance web designer and developer from Chittagong, Bangladesh.
-                        I always make websites that have unique designs and also has a good
-                        performance rate.
+                        I'm a systems engineer specialised in Data Science. <br />
+                        thank you very much for your visit!
                     </PText>
                 </div>
                 <div className="footer__col2">
@@ -97,36 +96,32 @@ export default function Footer() {
                         heading="Contact Info"
                         links={[
                             {
-                                title: '+88012312',
+                                title: '+5493462565888',
                                 path: 'tel:+88012312',
                             },
                             {
-                                title: 'webcifar@gmail.com',
-                                path: 'mailto:webcifar@gmail.com',
-                            },
-                            {
-                                title: 'GEC Circle, Chittagong, Bangladesh',
-                                path: 'http://google.com/maps',
+                                title: 'lucas.singh10@gmail.com',
+                                path: 'lucas.singh10@gmail.com',
                             },
                         ]}
                     />
                 </div>
                 <div className="footer__col4">
                     <FooterCol
-                        heading="social Links"
+                        heading="Social Links"
                         links={[
                             {
-                                title: 'Facebook',
-                                path: 'http://facebook.com',
+                                title: 'LinkedIn',
+                                path: 'https://www.linkedin.com/in/lucassingh/',
                             },
                             {
-                                title: 'Twitter',
-                                path: 'http://twitter.com',
+                                title: 'GitHub',
+                                path: 'https://github.com/lucassingh',
                             },
                             {
-                                title: 'Instagram',
-                                path: 'http://instagram.com',
-                            },
+                                title: 'Medium',
+                                path: 'https://github.com/lucassingh',
+                            }
                         ]}
                     />
                 </div>
@@ -134,7 +129,7 @@ export default function Footer() {
             <div className="copyright">
                 <div className="container">
                     <PText>
-                        © 2023 - Lucas Singh | Designed By{' '}
+                        © 2023 - Lucas Singh | All rights reserved
                     </PText>
                 </div>
             </div>

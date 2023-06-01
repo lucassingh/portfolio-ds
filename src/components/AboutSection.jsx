@@ -15,6 +15,9 @@ const AboutSectionStyles = styled.div`
   .aboutSection__right {
     flex: 1;
   }
+  .aboutImg {
+    border-radius: 15px;
+  }
   .section-title {
     text-align: left;
   }
@@ -74,16 +77,17 @@ const AboutSection = () => {
             <div className="container">
                 <div className="aboutSection__left">
                     <SectionTitle
-                        subheading="Let me introduce myself"
+                        subheading=""
                         heading="About Me"
                     />
                     <PText>
-                        I am a freelance website designer and developer from Chittagong,
-                        Bangladesh. I create professional websites. I love art and always
-                        try to show unique views to the audience through my design.
+                        I'm a systems engineer specialised in Data Science, I live in Venado Tuerto, a small city in the south of the province of
+                        Santa Fe, Argentina. <br />
+                        I am interested in working in challenging projects and collaborative teams.<br />
+                        In this website you can download my CV, see my projects and contact me for future jobs, thank you very much for your visit!
                     </PText>
                     <div className="aboutSection__buttons">
-                        <ButtonPrimary btnText="Read More" btnLink="/about" outline />
+                        <ButtonPrimary btnText="Download CV" btnLink="/about" outline />
                     </div>
                 </div>
                 <div className="aboutSection__right">
