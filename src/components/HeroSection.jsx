@@ -29,7 +29,7 @@ const HeroStyles = styled.div`
   .hero {
     height: 100vh;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 3%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@ const HeroStyles = styled.div`
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -16rem;
+    margin-bottom: -13rem;
     position: relative;
     color: ${({ theme }) => theme.colors.secondary};
     span {

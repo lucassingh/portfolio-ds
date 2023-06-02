@@ -1,85 +1,62 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { BsDownload, BsGithub, BsMedium } from 'react-icons/bs'
 
-const ProjectItemStyles = styled.div`
-  .projectItem__img {
-    width: 100%;
+
+const Card = styled.div`
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    border-radius: 10px;
+    color:${({ theme }) => theme.colors.secondary};
     height: 200px;
-    border-radius: 12px;
-    overflow: hidden;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: 3px solid ${({ theme }) => theme.colors.secondary};
-    img {
-      height: 100%;
-    }
-    .hero__social__text_card {
-        ul li a {
-            color: ${({ theme }) => theme.colors.secondary};
-            font-size: 20px;
-        }
-        li {
-            padding-bottom: 10px;
+    margin-bottom: 20px;
+    .card-header {
+        padding: 10px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 70%;
+        transition: transform 250ms;
+        border-bottom: 1px solid ${({ theme }) => theme.colors.secondary};
+        h2 {
+            font-size: 2.5rem;
         }
     }
-  }
-  .projectItem__info {
-    margin-top: 1rem;
-    background-color: ${({ theme }) => theme.colors.fifth};
-    padding: 1rem;
-    border-radius: 12px;
-  }
-  .projectItem__title {
-    font-size: 2.2rem;
-    color: ${({ theme }) => theme.colors.secondary}
-  }
-  .projectItem__desc {
-    font-size: 1.6rem;
-    font-family: 'RobotoMono Regular';
-    color: ${({ theme }) => theme.colors.secondary};
-    margin-top: 1rem;
-  }
-  @media only screen and (max-width: 768px) {
-    .projectItem__img {
-      height: 350px;
+    .card-header:hover{
+        transform: translateY(-5px);
     }
-  }
+    .card-body {
+        padding: 10px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 30%;
+        .link {
+            margin-right: 15px;
+        }
+        .icon-link {
+            font-size: 2rem;
+        }
+    }
+  
+    @media only screen and (min-width: 768px) {
+        width: 250px;
+        margin-right: 20px;
+    }
 `;
 
-export default function ProjectItem({
-    title = 'Project Name',
-}) {
+export default function ProjectItem() {
     return (
-        <ProjectItemStyles>
-            <Link to="/projects" className="projectItem__img">
-                <h3 className="projectItem__title">{title}</h3>
-                <div className="hero__social__text_card">
-                    <ul>
-                        <li>
-                            <a
-                                href="http://facebook.com/webcifar"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GH
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="http://twitter.com/webcifar"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                ME
-                            </a>
-                        </li>
-                    </ul>
+        <Card>
+            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                <div className='card-header'>
+                    <h2 >Project-1</h2>
                 </div>
-            </Link>
-        </ProjectItemStyles>
+            </a>
+            <div className='card-body'>
+                <a className='link' href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><BsMedium className='icon-link' /></a>
+                <a className='link' href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><BsGithub className='icon-link' /></a>
+                <a className='link' href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><BsDownload className='icon-link' /></a>
+            </div>
+        </Card>
     );
 }
