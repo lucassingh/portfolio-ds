@@ -34,7 +34,7 @@ const Card = styled.div`
             margin-right: 15px;
         }
         .icon-link {
-            font-size: 2rem;
+            font-size: 25px;
         }
     }
   
