@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import SectionTitle from '../components/SectionTitle';
 import ProjectsInfo from '../assets/data/projects';
 import ProjectItem from '../components/ProjectItem';
 import '../styles/components/gallery-filter.css'
-import pillsData from '../assets/data/pillsData';
-import PillProject from '../components/PillProject';
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
@@ -47,9 +45,30 @@ const ProjectStyle = styled.div`
   }
 `;
 
+const Pill = styled.button`
+  padding: 7px;
+  font-size: 1.5rem;
+  background: none;
+  border: 1px solid ${({ theme }) => theme.colors.secondary};
+  border-radius: 5px;
+  color:${({ theme }) => theme.colors.secondary};
+`;
+
 export default function Projects() {
 
-    const [projectsData] = useState(ProjectsInfo);
+    const [projectsData, setProjectsData] = useState([]);
+
+    const [collection, setCollection] = useState([])
+
+    useEffect(() => {
+        setProjectsData(ProjectsInfo)
+        setCollection([...new Set(ProjectsInfo.map((item) => item.category))])
+    }, [])
+
+    const gallery_filter = (itemData) => {
+        const filterData = ProjectsInfo.filter((item) => item.category === itemData);
+        setProjectsData(filterData);
+    }
 
     return (
         <>
@@ -60,19 +79,30 @@ export default function Projects() {
                         subheading="some of my recent works"
                     />
                     <div className='container-pills'>
+                        <Pill onClick={() => setProjectsData(ProjectsInfo)}>All</Pill>
                         {
-                            pillsData.map((item) => (
-                                <PillProject key={item.id} title={item.title}/>
+                            collection.map((item) => (
+                                <Pill key={item} onClick={() => { gallery_filter(item) }}>
+                                    {item}
+                                </Pill>
                             ))
                         }
                     </div>
                     <div className='projects-gallery'>
                         {
                             projectsData.map((item) => (
-                                <ProjectItem key={item.id}/>
+                                <ProjectItem
+                                    key={item.id}
+                                    title={item.title}
+                                    subtitle={item.subtitle}
+                                    link1={item.link1}
+                                    link2={item.link2}
+                                    link3={item.link3}
+                                    link4={item.link4}
+                                />
                             ))
                         }
-                    </div>                    
+                    </div>
                 </div>
             </ProjectStyle>
         </>

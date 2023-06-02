@@ -7,7 +7,7 @@ const StyledButton = styled.button`
   border: none;
   color: ${({ theme }) => theme.colors.secondary};
   font-size: 15px;
-  position: absolute;
+  position: fixed;
   z-index:9999;
   cursor: pointer;
   padding:10px;

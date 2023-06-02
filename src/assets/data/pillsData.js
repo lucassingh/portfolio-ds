@@ -3,6 +3,10 @@ import { v4 as uuidv4 } from 'uuid';
 const pillsData = [
     {
         id: uuidv4(),
+        title: 'All',
+    },
+    {
+        id: uuidv4(),
         title: 'Tableau',
     },
     {
@@ -11,15 +15,11 @@ const pillsData = [
     },
     {
         id: uuidv4(),
-        title: 'R',
-    },
-    {
-        id: uuidv4(),
         title: 'Power BI',
     },
     {
         id: uuidv4(),
-        title: 'Machine Learning',
+        title: 'R',
     },
     {
         id: uuidv4(),

@@ -7,6 +7,8 @@ import { RiMenu5Fill} from "react-icons/ri";
 const NavStyles = styled.nav`
 position: fixed;
   z-index: 100;
+  background-color: ${({ theme }) => theme.colors.primary};
+  box-shadow: 0px 2px 10px 0px rgba(15,15,15,0.50);
   top: 0;
   left: 0;
   width: 100%;
@@ -54,6 +56,7 @@ position: fixed;
   }
 
   @media only screen and (max-width: 768px) {
+    border-bottom: none;
     padding: 0;
     .hide-item {
       transform: translateY(calc(-100% - var(--top)));

@@ -12,13 +12,19 @@ const Card = styled.div`
     .card-header {
         padding: 10px;
         display: flex;
-        justify-content: right;
-        align-items: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: end;
+        flex-direction: column;
         height: 70%;
-        transition: transform 250ms;
+        transition: transform 250ms ease 0s;
         border-bottom: 1px solid ${({ theme }) => theme.colors.secondary};
         h2 {
             font-size: 2.5rem;
+        }
+        span {
+            margin-top: 5px;
+            font-size: 12px;
         }
     }
     .card-header:hover{
@@ -44,18 +50,19 @@ const Card = styled.div`
     }
 `;
 
-export default function ProjectItem() {
+export default function ProjectItem({title, subtitle, link1, link2, link3, link4}) {
     return (
         <Card>
-            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+            <a href={link1} target="_blank" rel="noopener noreferrer">
                 <div className='card-header'>
-                    <h2 >Project-1</h2>
+                    <h2>{title}</h2>
+                    <span>{subtitle}</span>
                 </div>
             </a>
             <div className='card-body'>
-                <a className='link' href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><BsMedium className='icon-link' /></a>
-                <a className='link' href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><BsGithub className='icon-link' /></a>
-                <a className='link' href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><BsDownload className='icon-link' /></a>
+                <a className='link' href={link2} target="_blank" rel="noopener noreferrer"><BsMedium size={25} className='icon-link' /></a>
+                <a className='link' href={link3} target="_blank" rel="noopener noreferrer"><BsGithub size={25} className='icon-link' /></a>
+                <a className='link' href={link4} target="_blank" rel="noopener noreferrer"><BsDownload size={25} className='icon-link' /></a>
             </div>
         </Card>
     );
