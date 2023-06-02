@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BsDownload, BsGithub, BsMedium } from 'react-icons/bs'
-
 
 const Card = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.secondary};
@@ -57,9 +55,9 @@ export default function ProjectItem({title, subtitle, link1, link2, link3, link4
                 </div>
             </a>
             <div className='card-body'>
-                <a className='link' href={link2} target="_blank" rel="noopener noreferrer"><BsMedium size='25px' className='icon-link' /></a>
-                <a className='link' href={link3} target="_blank" rel="noopener noreferrer"><BsGithub size='25px' className='icon-link' /></a>
-                <a className='link' href={link4} target="_blank" rel="noopener noreferrer"><BsDownload size='25px' className='icon-link' /></a>
+                <a className='link' href={link2} target="_blank" rel="noopener noreferrer">MEDIUM</a>
+                <a className='link' href={link3} target="_blank" rel="noopener noreferrer">GITHUB</a>
+                <a className='link' href={link4} target="_blank" rel="noopener noreferrer">lINKEDiN</a>
             </div>
         </Card>
     );
