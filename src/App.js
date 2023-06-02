@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const themes = {
     dark: {
@@ -42,20 +43,21 @@ function App() {
             <Button handleClick={toggleTheme} text={theme === 'dark' ? 'Light' : 'Dark'} />
             <Router>
                 <NavMenu />
-                    <Switch>
-                        <Route path='/about'>
-                            <About />
-                        </Route>
-                        <Route path='/projects'>
-                            <Projects />
-                        </Route>
-                        <Route path='/contact'>
-                            <Contact />
-                        </Route>
-                        <Route path='/'>
-                            <Home />
-                        </Route>
-                    </Switch>
+                <ScrollToTop />
+                <Switch>
+                    <Route path='/about'>
+                        <About />
+                    </Route>
+                    <Route path='/projects'>
+                        <Projects />
+                    </Route>
+                    <Route path='/contact'>
+                        <Contact />
+                    </Route>
+                    <Route path='/'>
+                        <Home />
+                    </Route>
+                </Switch>
                 <Footer />
             </Router>
         </ThemeProvider>
