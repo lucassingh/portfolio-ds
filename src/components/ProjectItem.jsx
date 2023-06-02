@@ -39,9 +39,6 @@ const Card = styled.div`
         .link {
             margin-right: 15px;
         }
-        .icon-link {
-            font-size: 25px;
-        }
     }
   
     @media only screen and (min-width: 768px) {
@@ -60,9 +57,9 @@ export default function ProjectItem({title, subtitle, link1, link2, link3, link4
                 </div>
             </a>
             <div className='card-body'>
-                <a className='link' href={link2} target="_blank" rel="noopener noreferrer"><BsMedium size={25} className='icon-link' /></a>
-                <a className='link' href={link3} target="_blank" rel="noopener noreferrer"><BsGithub size={25} className='icon-link' /></a>
-                <a className='link' href={link4} target="_blank" rel="noopener noreferrer"><BsDownload size={25} className='icon-link' /></a>
+                <a className='link' href={link2} target="_blank" rel="noopener noreferrer"><BsMedium size='25px' className='icon-link' /></a>
+                <a className='link' href={link3} target="_blank" rel="noopener noreferrer"><BsGithub size='25px' className='icon-link' /></a>
+                <a className='link' href={link4} target="_blank" rel="noopener noreferrer"><BsDownload size='25px' className='icon-link' /></a>
             </div>
         </Card>
     );
