@@ -4,6 +4,8 @@ import { MdEmail, MdLocalPhone } from 'react-icons/md';
 import { BsLinkedin, BsGithub, BsMedium } from 'react-icons/bs'
 import ContactInfoItem from './ContactInfoItem';
 import SectionTitle from './SectionTitle';
+import { motion } from "framer-motion"
+import Reveal from './Reveal';
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
@@ -54,17 +56,27 @@ export default function ContactSection() {
     return (
         <ContactSectionStyle>
             <div className="container">
-                <SectionTitle heading="contact" subheading="get in touch" />
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 2 }}
+                >
+                    <SectionTitle heading="contact" subheading="get in touch" />
+                </motion.div>
                 <div className="contactSection__wrapper">
                     <div className="left">
-                        <ContactInfoItem icon={<BsLinkedin />} text="LinkedIn" link='https://www.linkedin.com/in/lucassingh/' />
-                        <ContactInfoItem icon={<BsGithub />} text="GitHub" link='https://github.com/lucassingh' />
-                        <ContactInfoItem icon={<BsMedium />} text="Medium" link='' />
+                        <Reveal>
+                            <ContactInfoItem icon={<BsLinkedin />} text="LinkedIn" link='https://www.linkedin.com/in/lucassingh/' />
+                            <ContactInfoItem icon={<BsGithub />} text="GitHub" link='https://github.com/lucassingh' />
+                            <ContactInfoItem icon={<BsMedium />} text="Medium" link='' />
+                        </Reveal>
                     </div>
                     <div className="right">
-                        <ContactInfoItem icon={<MdLocalPhone />} text="+5493462565888" />
-                        <ContactInfoItem icon={<MdEmail />} text="lucas.singh10@gmail.com" />
-                        <ContactInfoItem text="Venado Tuerto, Santa Fe,  Argentina" link='https://goo.gl/maps/iJakYCMJZvQkbf1eA' />
+                        <Reveal>
+                            <ContactInfoItem icon={<MdLocalPhone />} text="+5493462565888" />
+                            <ContactInfoItem icon={<MdEmail />} text="lucas.singh10@gmail.com" />
+                            <ContactInfoItem text="Venado Tuerto, Santa Fe,  Argentina" link='https://goo.gl/maps/iJakYCMJZvQkbf1eA' />
+                        </Reveal>
                     </div>
                 </div>
             </div>

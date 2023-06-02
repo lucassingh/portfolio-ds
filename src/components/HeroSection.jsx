@@ -1,8 +1,8 @@
-import React from 'react';
 import styled from 'styled-components';
 import Spline from '@splinetool/react-spline';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+import { motion } from "framer-motion"
 
 const Wrapper = styled.div`
     animation: fadeIn 3s;
@@ -130,14 +130,26 @@ const HeroSection = () => {
         <HeroStyles>
             <div className="hero">
                 <div className="container-hero">
-                    <h1 className="hero__heading">
-                        <span>Hello, I am</span>
-                        <span className="hero__name">Lucas Singh</span>
-                        <span>Data Scientist</span>
-                    </h1>
-                    <Wrapper>
-                        <Spline className='splineMobile' scene="https://prod.spline.design/RTdoBHOD690swEmP/scene.splinecode" />
-                    </Wrapper>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 3 }}
+                    >
+                        <h1 className="hero__heading">
+                            <span>Hello, I am</span>
+                            <span className="hero__name">Lucas Singh</span>
+                            <span>Data Scientist</span>
+                        </h1>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 3 }}
+                    >
+                        <Wrapper>
+                            <Spline className='splineMobile' scene="https://prod.spline.design/RTdoBHOD690swEmP/scene.splinecode" />
+                        </Wrapper>
+                    </motion.div>
                     <div className="hero__social">
                         <div className="hero__social__indicator">
                             <p>Follow</p>

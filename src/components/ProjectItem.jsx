@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Reveal from './Reveal';
 
 const Card = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.secondary};
@@ -14,11 +15,10 @@ const Card = styled.div`
         -webkit-box-align: center;
         align-items: end;
         flex-direction: column;
-        height: 70%;
         transition: transform 250ms ease 0s;
         border-bottom: 1px solid ${({ theme }) => theme.colors.secondary};
         h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         span {
             margin-top: 5px;
@@ -33,7 +33,7 @@ const Card = styled.div`
         display: flex;
         justify-content: right;
         align-items: center;
-        height: 30%;
+        height: 100%;
         .link {
             margin-right: 15px;
         }
@@ -45,15 +45,17 @@ const Card = styled.div`
     }
 `;
 
-export default function ProjectItem({title, subtitle, link1, link2, link3, link4}) {
+export default function ProjectItem({ title, subtitle, link1, link2, link3, link4 }) {
     return (
         <Card>
-            <a href={link1} target="_blank" rel="noopener noreferrer">
-                <div className='card-header'>
-                    <h2>{title}</h2>
-                    <span>{subtitle}</span>
-                </div>
-            </a>
+            <Reveal>
+                <a href={link1} target="_blank" rel="noopener noreferrer">
+                    <div className='card-header'>
+                        <h2>{title}</h2>
+                        <span>{subtitle}</span>
+                    </div>
+                </a>
+            </Reveal>
             <div className='card-body'>
                 <a className='link' href={link2} target="_blank" rel="noopener noreferrer">MEDIUM</a>
                 <a className='link' href={link3} target="_blank" rel="noopener noreferrer">GITHUB</a>

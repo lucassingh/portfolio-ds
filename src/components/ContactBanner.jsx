@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { PText, ButtonPrimary } from '../components'
+import Reveal from './Reveal';
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
@@ -24,14 +25,18 @@ const ContactBannerStyles = styled.div`
 
 export default function ContactBanner() {
     return (
+
         <ContactBannerStyles>
             <div className="container">
                 <div className="contactBanner__wrapper">
-                    <PText>What's on your mind?</PText>
-                    <h3 className="contactBanner__heading">Let me help you</h3>
-                    <ButtonPrimary btnText="Contact Now" btnLink="/contact" />
+                    <Reveal>
+                        <PText>What's on your mind?</PText>
+                        <h3 className="contactBanner__heading">Let me help you</h3>
+                        <ButtonPrimary btnText="Contact Now" btnLink="/contact" />
+                    </Reveal>
                 </div>
             </div>
         </ContactBannerStyles>
+
     );
 }
