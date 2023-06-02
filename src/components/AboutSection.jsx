@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { PText, ButtonPrimary, SectionTitle } from '../components'
 import AboutImg from '../assets/images/about-sec-img.png';
+import Reveal from './Reveal';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -15,8 +16,13 @@ const AboutSectionStyles = styled.div`
   .aboutSection__right {
     flex: 1;
   }
+  .aboutSection__right {
+    display: flex;
+    justify-content: end;
+  }
   .aboutImg {
     border-radius: 15px;
+    width: 80%;
   }
   .section-title {
     text-align: left;
@@ -51,6 +57,10 @@ const AboutSectionStyles = styled.div`
     }
     .aboutSection__right {
       margin-top: 3rem;
+      justify-content: center;
+    }
+    .aboutImg {
+         width: 100%;
     }
     .section-title {
       text-align: center;
@@ -75,24 +85,29 @@ const AboutSection = () => {
     return (
         <AboutSectionStyles>
             <div className="container">
-                <div className="aboutSection__left">
-                    <SectionTitle
-                        subheading=""
-                        heading="About Me"
-                    />
-                    <PText>
-                        I'm a systems engineer specialised in Data Science, I live in Venado Tuerto, a small city in the south of the province of
-                        Santa Fe, Argentina. <br />
-                        I am interested in working in challenging projects and collaborative teams.<br />
-                        In this website you can download my CV, see my projects and contact me for future jobs, thank you very much for your visit!
-                    </PText>
-                    <div className="aboutSection__buttons">
-                        <ButtonPrimary btnText="Download CV" btnLink="/about" outline />
+                <Reveal>
+                    <div className="aboutSection__left">
+                        <SectionTitle
+                            subheading=""
+                            heading="About Me"
+                        />
+                        <PText>
+                            I'm a systems engineer specialised in Data Science, I live in Venado Tuerto, a small city in the south of the province of
+                            Santa Fe, Argentina. <br />
+                            I am interested in working in challenging projects and collaborative teams.<br />
+                            In this website you can download my CV, see my projects and contact me for future jobs, thank you very much for your visit!
+                        </PText>
+                        <div className="aboutSection__buttons">
+                            <ButtonPrimary btnText="Download CV" btnLink="/about" outline />
+                        </div>
                     </div>
-                </div>
-                <div className="aboutSection__right">
-                    <img className="aboutImg" src={AboutImg} alt="Img" />
-                </div>
+                </Reveal>
+
+                <Reveal>
+                    <div className="aboutSection__right">
+                        <img className="aboutImg" src={AboutImg} alt="Img" />
+                    </div>
+                </Reveal>
             </div>
         </AboutSectionStyles>
     );

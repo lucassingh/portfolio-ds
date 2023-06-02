@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import MapImg from '../assets/images/map.png';
 import PText from './PText';
+import Reveal from './Reveal';
 
 const MapStyles = styled.div`
   background: url(${MapImg}) no-repeat;
@@ -50,19 +51,20 @@ export default function Map() {
         <MapStyles>
             <div className="container">
                 <div className="map__card">
-                    <h3 className="map__card__heading">I am here !</h3>
-                    <PText>Venado Tuerto, Santa Fe, Argentina</PText>
-                    <a
-                        className="map__card__link"
-                        href="https://goo.gl/maps/iJakYCMJZvQkbf1eA"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        Open in google maps
-                    </a>
+                    <Reveal>
+                        <h3 className="map__card__heading">I am here !</h3>
+                        <PText>Venado Tuerto, Santa Fe, Argentina</PText>
+                        <a
+                            className="map__card__link"
+                            href="https://goo.gl/maps/iJakYCMJZvQkbf1eA"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Open in google maps
+                        </a>
+                    </Reveal>
                 </div>
             </div>
-            {/* <img src={MapImg} alt="Map" /> */}
         </MapStyles>
     );
 }

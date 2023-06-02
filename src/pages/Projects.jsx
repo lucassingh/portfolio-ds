@@ -4,6 +4,7 @@ import SectionTitle from '../components/SectionTitle';
 import ProjectsInfo from '../assets/data/projects';
 import ProjectItem from '../components/ProjectItem';
 import '../styles/components/gallery-filter.css'
+import { motion } from "framer-motion"
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
@@ -74,20 +75,32 @@ export default function Projects() {
         <>
             <ProjectStyle>
                 <div className="container">
-                    <SectionTitle
-                        heading="Projects"
-                        subheading="some of my recent works"
-                    />
-                    <div className='container-pills'>
-                        <Pill onClick={() => setProjectsData(ProjectsInfo)}>All</Pill>
-                        {
-                            collection.map((item) => (
-                                <Pill key={item} onClick={() => { gallery_filter(item) }}>
-                                    {item}
-                                </Pill>
-                            ))
-                        }
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 2 }}
+                    >
+                        <SectionTitle
+                            heading="Projects"
+                            subheading="some of my recent works"
+                        />
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 2 }}
+                    >
+                        <div className='container-pills'>
+                            <Pill onClick={() => setProjectsData(ProjectsInfo)}>All</Pill>
+                            {
+                                collection.map((item) => (
+                                    <Pill key={item} onClick={() => { gallery_filter(item) }}>
+                                        {item}
+                                    </Pill>
+                                ))
+                            }
+                        </div>
+                    </motion.div>
                     <div className='projects-gallery'>
                         {
                             projectsData.map((item) => (
