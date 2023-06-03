@@ -16,7 +16,7 @@ const LoaderSectionStyles = styled.div`
 const Loader = () => {
     return (
         <LoaderSectionStyles>
-            <span style={{color: '#BCB4B4', fontSize:14}}>loading...</span>
+            <span style={{color: '#BCB4B4', fontSize:14, fontStyle:'italic'}}>loading...</span>
         </LoaderSectionStyles>
     )
 }

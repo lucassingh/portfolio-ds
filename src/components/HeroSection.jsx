@@ -1,7 +1,9 @@
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Spline from '@splinetool/react-spline';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+import Loader from './Loader';
 import { motion } from "framer-motion"
 
 const Wrapper = styled.div`
@@ -126,74 +128,94 @@ const HeroStyles = styled.div`
 `;
 
 const HeroSection = () => {
+
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        check_loading();
+    }, [])
+
+    const check_loading = () => {
+
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 2000);
+
+        setIsLoading(true)
+    }
+
     return (
-        <HeroStyles>
-            <div className="hero">
-                <div className="container-hero">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 3 }}
-                    >
-                        <h1 className="hero__heading">
-                            <span>Hello, I am</span>
-                            <span className="hero__name">Lucas Singh</span>
-                            <span>Data Scientist</span>
-                        </h1>
-                    </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 3 }}
-                    >
-                        <Wrapper>
-                            <Spline className='splineMobile' scene="https://prod.spline.design/RTdoBHOD690swEmP/scene.splinecode" />
-                        </Wrapper>
-                    </motion.div>
-                    <div className="hero__social">
-                        <div className="hero__social__indicator">
-                            <p>Follow</p>
-                            <img src={SocialMediaArrow} alt="icon" />
+
+        isLoading ? (
+            <Loader />
+        ) : (
+            <HeroStyles>
+                <div className="hero">
+                    <div className="container-hero">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 3 }}
+                        >
+                            <h1 className="hero__heading">
+                                <span className="hero__name">Lucas Singh</span>
+                                <span>Data Scientist</span>
+                            </h1>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 3 }}
+                        >
+                            <Wrapper>
+                                <Spline className='splineMobile' scene="https://prod.spline.design/RTdoBHOD690swEmP/scene.splinecode" />
+                            </Wrapper>
+                        </motion.div>
+                        <div className="hero__social">
+                            <div className="hero__social__indicator">
+                                <p>Follow</p>
+                                <img src={SocialMediaArrow} alt="icon" />
+                            </div>
+                            <div className="hero__social__text">
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="http://facebook.com/webcifar"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            iN
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="http://twitter.com/webcifar"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            GH
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="http://twitter.com/webcifar"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            ME
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="hero__social__text">
-                            <ul>
-                                <li>
-                                    <a
-                                        href="http://facebook.com/webcifar"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        iN
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="http://twitter.com/webcifar"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        GH
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="http://twitter.com/webcifar"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        ME
-                                    </a>
-                                </li>
-                            </ul>
+                        <div className="hero__scrollDown">
+                            <p>Scroll</p>
+                            <img className='arrow' src={ScrollDownArrow} alt="ScrollDown Arrow" />
                         </div>
-                    </div>
-                    <div className="hero__scrollDown">
-                        <p>Scroll</p>
-                        <img className='arrow' src={ScrollDownArrow} alt="ScrollDown Arrow" />
                     </div>
                 </div>
-            </div>
-        </HeroStyles>
+            </HeroStyles>
+        )
     );
 }
 
