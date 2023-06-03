@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
-import { AboutInfoItem } from '../components';
+import { AboutInfoItem, ButtonPrimary } from '../components';
 import ContactBanner from '../components/ContactBanner'
 import Reveal from '../components/Reveal';
 
@@ -102,7 +101,7 @@ export default function About() {
                                         I define myself as a curious, proactive and always eager to learn.
                                     </PText>
                                 </div>
-                                <Button btnText="Download CV" btnLink="#" />
+                                <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/10eHI4cTrn3kt9P7YCcCzwkM3MLmXX4_j/view?usp=sharing" outline />
                             </Reveal>
                         </div>
                         <div className="right">
