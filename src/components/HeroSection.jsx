@@ -155,7 +155,7 @@ const HeroSection = () => {
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 3 }}
+                            transition={{ duration: 2 }}
                         >
                             <h1 className="hero__heading">
                                 <span className="hero__name">Lucas Singh</span>
@@ -165,7 +165,7 @@ const HeroSection = () => {
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 3 }}
+                            transition={{ duration: 2 }}
                         >
                             <Wrapper>
                                 <Spline className='splineMobile' scene="https://prod.spline.design/RTdoBHOD690swEmP/scene.splinecode" />
