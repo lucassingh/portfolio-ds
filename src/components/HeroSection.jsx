@@ -180,7 +180,7 @@ const HeroSection = () => {
                                 <ul>
                                     <li>
                                         <a
-                                            href="http://facebook.com/webcifar"
+                                            href="https://www.linkedin.com/in/lucassingh/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -189,7 +189,7 @@ const HeroSection = () => {
                                     </li>
                                     <li>
                                         <a
-                                            href="http://twitter.com/webcifar"
+                                            href="https://github.com/lucassingh"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -198,7 +198,7 @@ const HeroSection = () => {
                                     </li>
                                     <li>
                                         <a
-                                            href="http://twitter.com/webcifar"
+                                            href="https://medium.com/@lucas.singh10"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
