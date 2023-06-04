@@ -32,7 +32,7 @@ export default function ContactBanner() {
                     <Reveal>
                         <PText>What's on your mind?</PText>
                         <h3 className="contactBanner__heading">Let me help you</h3>
-                        <ButtonPrimary btnText="Contact Now" btnLink="/contact" />
+                        <ButtonPrimary btnText="Contact Now" btnLink="/contact" target={true} />
                     </Reveal>
                 </div>
             </div>

@@ -24,12 +24,23 @@ export default function ButtonPrimary({
     btnText = 'test',
     btnLink = 'test',
     outline = false,
+    target = false
 }) {
     return (
         <ButtonStyle outline={outline} className="button-wrapper">
-            <a href={btnLink} target='_blank' className="button" rel="noopener noreferrer">
-                {btnText}
-            </a>
+
+            {
+                target ? (
+                    <a href={btnLink} className="button" rel="noopener noreferrer">
+                        {btnText}
+                    </a>
+                ) : (
+                    <a href={btnLink} target='_blank' className="button" rel="noopener noreferrer">
+                        {btnText}
+                    </a>
+                )
+            }
+
         </ButtonStyle>
     );
 }

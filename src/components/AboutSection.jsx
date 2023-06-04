@@ -98,7 +98,7 @@ const AboutSection = () => {
                             In this website you can download my CV, see my projects and contact me for future jobs, thank you very much for your visit!
                         </PText>
                         <div className="aboutSection__buttons">
-                            <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1rJV0z6NnceqAYPk9tjAYhoJZ71mBkQSY/view?usp=sharing" outline />
+                            <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1rJV0z6NnceqAYPk9tjAYhoJZ71mBkQSY/view?usp=sharing" outline  target={false} />
                         </div>
                     </div>
                 </Reveal>

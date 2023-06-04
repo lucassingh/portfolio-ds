@@ -101,7 +101,7 @@ export default function About() {
                                         I define myself as a curious, proactive and always eager to learn.
                                     </PText>
                                 </div>
-                                <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1rJV0z6NnceqAYPk9tjAYhoJZ71mBkQSY/view?usp=sharing" outline />
+                                <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1rJV0z6NnceqAYPk9tjAYhoJZ71mBkQSY/view?usp=sharing" outline target={false}/>
                             </Reveal>
                         </div>
                         <div className="right">
