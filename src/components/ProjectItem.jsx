@@ -45,7 +45,8 @@ const Card = styled.div`
     }
 `;
 
-export default function ProjectItem({ title, subtitle, link1, link2, link3, link4 }) {
+export default function ProjectItem({ title, subtitle, medium, git, link1, link2, link3, link4 }) {
+
     return (
         <Card>
             <Reveal>
@@ -57,8 +58,19 @@ export default function ProjectItem({ title, subtitle, link1, link2, link3, link
                 </a>
             </Reveal>
             <div className='card-body'>
-                <a className='link' href={link2} target="_blank" rel="noopener noreferrer">MEDIUM</a>
-                <a className='link' href={link3} target="_blank" rel="noopener noreferrer">GITHUB</a>
+
+                {
+                    medium && (
+                        <a className='link' href={link2} target="_blank" rel="noopener noreferrer">MEDIUM</a>
+                    )
+                }
+
+                {
+                    git && (
+                        <a className='link' href={link3} target="_blank" rel="noopener noreferrer">GITHUB</a>
+                    )
+                }
+
                 <a className='link' href={link4} target="_blank" rel="noopener noreferrer">DOWLOAD</a>
             </div>
         </Card>

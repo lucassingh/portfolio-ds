@@ -108,6 +108,8 @@ export default function Projects() {
                                     key={item.id}
                                     title={item.title}
                                     subtitle={item.subtitle}
+                                    git={item.git}
+                                    medium={item.medium}
                                     link1={item.link1}
                                     link2={item.link2}
                                     link3={item.link3}
