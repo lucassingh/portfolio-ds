@@ -183,16 +183,16 @@ const projects = [
     },
     {
         id: 15,
-        title: 'Project-15',
+        title: 'FIFA 19 stats',
         category: 'Data Science',
         categoryId:15,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
+        subtitle: 'Analizing players of FIFA 19',
         medium: true,
         git: true,
-        link1:'https://www.google.com/',
+        link1:'https://github.com/lucassingh/fifa_stats',
         link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
+        link3:'https://github.com/lucassingh/fifa_stats',
+        link4:'https://drive.google.com/file/d/1ew_BY-rhweDD4EZmCvfNc4VnLci90HKs/view?usp=sharing'
     },
     {
         id: 16,
