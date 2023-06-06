@@ -196,29 +196,29 @@ const projects = [
     },
     {
         id: 16,
-        title: 'Project-16',
+        title: 'Startups stats',
         category: 'Data Science',
         categoryId:16,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
+        subtitle: 'Analysis startups in India',
         medium: false,
         git: true,
-        link1:'https://www.google.com/',
+        link1:'https://github.com/lucassingh/02_start-uo_stats.',
         link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
+        link3:'https://github.com/lucassingh/02_start-uo_stats',
+        link4:'https://drive.google.com/file/d/1PBch39iblw89zqtGwt44PvBCACvjA5QC/view?usp=sharing'
     },
     {
         id: 17,
-        title: 'Project-17',
+        title: 'Movie stats',
         category: 'Data Science',
         categoryId:17,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
+        subtitle: 'Movie recommender analysis.',
         medium: true,
         git: true,
-        link1:'https://www.google.com/',
+        link1:'https://github.com/lucassingh/03_movie-recommender',
         link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
+        link3:'https://github.com/lucassingh/03_movie-recommender',
+        link4:'https://drive.google.com/file/d/1e8AlFA8q1uXVaiPqxNDy9eBZAL76KRAs/view?usp=sharing'
     },
     {
         id: 18,

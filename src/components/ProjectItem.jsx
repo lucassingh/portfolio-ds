@@ -30,12 +30,18 @@ const Card = styled.div`
     }
     .card-body {
         padding: 10px;
+        height: 50%;
         display: flex;
-        justify-content: right;
-        align-items: center;
-        height: 100%;
+        justify-content: end;
+        align-items: start;
+    }
+
+    .card-footer {
+        padding: 10px;
+        display: flex;
+        justify-content: end;
         .link {
-            margin-right: 15px;
+            margin-left: 15px;
         }
     }
   
@@ -45,7 +51,7 @@ const Card = styled.div`
     }
 `;
 
-export default function ProjectItem({ title, subtitle, medium, git, link1, link2, link3, link4 }) {
+export default function ProjectItem({ category, title, subtitle, medium, git, link1, link2, link3, link4 }) {
 
     return (
         <Card>
@@ -58,7 +64,11 @@ export default function ProjectItem({ title, subtitle, medium, git, link1, link2
                 </a>
             </Reveal>
             <div className='card-body'>
-
+                <a className='link' href={link1} target="_blank" rel="noopener noreferrer">
+                    {category} project
+                </a>
+            </div>
+            <div className='card-footer'>
                 {
                     medium && (
                         <a className='link' href={link2} target="_blank" rel="noopener noreferrer">MEDIUM</a>
