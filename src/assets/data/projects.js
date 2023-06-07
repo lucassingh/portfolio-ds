@@ -222,29 +222,16 @@ const projects = [
     },
     {
         id: 18,
-        title: 'Project-18',
+        title: 'Mall Customers',
         category: 'Data Science',
         categoryId:18,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
+        subtitle: 'Cluster segment by customer',
         medium: false,
         git: true,
-        link1:'https://www.google.com/',
+        link1:'https://github.com/lucassingh/04-customers-analysis',
         link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
-    },
-    {
-        id: 19,
-        title: 'Project-19',
-        category: 'Data Science',
-        categoryId:19,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
-        medium: false,
-        git: true,
-        link1:'https://www.google.com/',
-        link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
+        link3:'https://github.com/lucassingh/04-customers-analysis',
+        link4:'https://drive.google.com/file/d/1HLLeYX3BQyLEM2vDpFmq5flb2p1S6xsV/view?usp=sharing'
     },
     {
         id: 21,
