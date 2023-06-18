@@ -131,16 +131,16 @@ const projects = [
     },
     {
         id: 11,
-        title: 'Project-11',
+        title: 'Finances Dashboard',
         category: 'Power BI',
         categoryId:11,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
-        medium: true,
+        subtitle: 'Personal finances tracking',
+        medium: false,
         git: false,
-        link1:'https://www.google.com/',
+        link1:'https://app.powerbi.com/view?r=eyJrIjoiN2ZkZmNiOTItZDA2OC00YzA0LTlhZGEtYjA5Nzk3ZjNkMmYyIiwidCI6ImE4NGEzNjI2LTM4NDItNDE5Ni1iYTdmLWM2NWM5NzE0NzlkNiIsImMiOjR9',
         link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
+        link3:'https://app.powerbi.com/view?r=eyJrIjoiN2ZkZmNiOTItZDA2OC00YzA0LTlhZGEtYjA5Nzk3ZjNkMmYyIiwidCI6ImE4NGEzNjI2LTM4NDItNDE5Ni1iYTdmLWM2NWM5NzE0NzlkNiIsImMiOjR9',
+        link4:'https://drive.google.com/file/d/1d2XATe0KkdD9D3YN_H47sU9YoGMOdDZD/view?usp=sharing'
     },
     {
         id: 12,
