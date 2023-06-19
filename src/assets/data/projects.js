@@ -144,16 +144,16 @@ const projects = [
     },
     {
         id: 12,
-        title: 'Project-12',
+        title: 'Cycles Dashboard',
         category: 'Power BI',
         categoryId:12,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
-        medium: true,
+        subtitle: 'Cycles sales tracking',
+        medium: false,
         git: false,
-        link1:'https://www.google.com/',
+        link1:'https://app.powerbi.com/view?r=eyJrIjoiOTRiODA2ZmYtNWNlZi00MjhlLTk1ZjktYThlZTA4OTAyNzVhIiwidCI6ImE4NGEzNjI2LTM4NDItNDE5Ni1iYTdmLWM2NWM5NzE0NzlkNiIsImMiOjR9',
         link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
+        link3:'https://app.powerbi.com/view?r=eyJrIjoiOTRiODA2ZmYtNWNlZi00MjhlLTk1ZjktYThlZTA4OTAyNzVhIiwidCI6ImE4NGEzNjI2LTM4NDItNDE5Ni1iYTdmLWM2NWM5NzE0NzlkNiIsImMiOjR9',
+        link4:'https://drive.google.com/file/d/1UImYlS4nksL9yB8CnA-NQ3heLVytyLNS/view?usp=sharing'
     },
     {
         id: 13,
