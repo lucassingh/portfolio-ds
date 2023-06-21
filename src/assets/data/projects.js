@@ -157,16 +157,16 @@ const projects = [
     },
     {
         id: 13,
-        title: 'Project-13',
+        title: 'Sales dashboard',
         category: 'Power BI',
         categoryId:13,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
+        subtitle: 'Statics by company departments',
         medium: false,
         git: false,
-        link1:'https://www.google.com/',
+        link1:'https://app.powerbi.com/view?r=eyJrIjoiYTgxZGU4NmYtYzNjYi00Mjc0LWEwNGUtYjM5OTBkMTlkZGIwIiwidCI6ImE4NGEzNjI2LTM4NDItNDE5Ni1iYTdmLWM2NWM5NzE0NzlkNiIsImMiOjR9',
         link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
+        link3:'https://app.powerbi.com/view?r=eyJrIjoiYTgxZGU4NmYtYzNjYi00Mjc0LWEwNGUtYjM5OTBkMTlkZGIwIiwidCI6ImE4NGEzNjI2LTM4NDItNDE5Ni1iYTdmLWM2NWM5NzE0NzlkNiIsImMiOjR9',
+        link4:'https://drive.google.com/file/d/1Yp99CDxc3rOyb9Z2tRxr7A5cHfn48izm/view?usp=sharing'
     },
     {
         id: 14,
