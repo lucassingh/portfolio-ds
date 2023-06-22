@@ -170,16 +170,16 @@ const projects = [
     },
     {
         id: 14,
-        title: 'Project-14',
+        title: 'Accidents Dashboard',
         category: 'Power BI',
         categoryId:14,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
+        subtitle: 'Tracking accidents in NYC',
         medium: false,
         git: false,
-        link1:'https://www.google.com/',
+        link1:'https://app.powerbi.com/view?r=eyJrIjoiNDQ3YjRlMTctY2ExZi00NTJjLTg5MjEtNmY2YjA4OTgwYzllIiwidCI6ImE4NGEzNjI2LTM4NDItNDE5Ni1iYTdmLWM2NWM5NzE0NzlkNiIsImMiOjR9',
         link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
+        link3:'https://app.powerbi.com/view?r=eyJrIjoiNDQ3YjRlMTctY2ExZi00NTJjLTg5MjEtNmY2YjA4OTgwYzllIiwidCI6ImE4NGEzNjI2LTM4NDItNDE5Ni1iYTdmLWM2NWM5NzE0NzlkNiIsImMiOjR9',
+        link4:'https://drive.google.com/file/d/1nhy4jA_yiXxD2wZ3mgJzhYgFTFL5k6qx/view?usp=sharing'
     },
     {
         id: 15,
