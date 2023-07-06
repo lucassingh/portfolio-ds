@@ -232,59 +232,7 @@ const projects = [
         link2:'https://www.google.com/',
         link3:'https://github.com/lucassingh/04-customers-analysis',
         link4:'https://drive.google.com/file/d/1HLLeYX3BQyLEM2vDpFmq5flb2p1S6xsV/view?usp=sharing'
-    },
-    {
-        id: 21,
-        title: 'Project-21',
-        category: 'R',
-        categoryId:21,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
-        medium: true,
-        git: true,
-        link1:'https://www.google.com/',
-        link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
-    },
-    {
-        id: 22,
-        title: 'Project-22',
-        category: 'R',
-        categoryId:22,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
-        medium: false,
-        git: true,
-        link1:'https://www.google.com/',
-        link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
-    },
-    {
-        id: 23,
-        title: 'Project-23',
-        category: 'R',
-        categoryId:23,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
-        medium: false,
-        git: true,
-        link1:'https://www.google.com/',
-        link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
-    },
-    {
-        id: 24,
-        title: 'Project-24',
-        category: 'R',
-        categoryId:24,
-        subtitle: 'lorem ipsum sad  dsd adasd.',
-        medium: false,
-        git: true,
-        link1:'https://www.google.com/',
-        link2:'https://www.google.com/',
-        link3:'https://www.google.com/',
-        link4:'https://www.google.com/'
-    },
+    }
 ];
 
 export default projects;
