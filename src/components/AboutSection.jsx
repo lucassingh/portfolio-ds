@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { PText, ButtonPrimary, SectionTitle } from '../components'
-import AboutImg from '../assets/images/about-sec-img.png';
+import AboutImg from '../assets/images/about-sec-img.jpeg';
 import Reveal from './Reveal';
 
 const AboutSectionStyles = styled.div`
