@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import SectionTitle from '../components/SectionTitle';
 import ProjectsInfo from '../assets/data/projects';
 import ProjectItem from '../components/ProjectItem';
-import '../styles/components/gallery-filter.css'
+import '../styles/components/gallery-filter.css';
+import img from '../assets/images/arquitectura-1.png';
 import { motion } from "framer-motion"
+import Reveal from '../components/Reveal';
 
 const ProjectStyle = styled.div`
   padding: 10rem 0;
@@ -37,6 +39,9 @@ const ProjectStyle = styled.div`
   .projects__searchBar .searchIcon path {
     color: var(--deep-dark);
   }
+  .cont-title {
+    margin-top: 50px;
+  }
   @media only screen and (max-width: 768px) {
     .projects__searchBar,
     .projects__searchBar form,
@@ -45,6 +50,42 @@ const ProjectStyle = styled.div`
     }
   }
 `;
+
+const ProjectBG = styled.div`
+    width: 100%;
+    background: none;
+    height: 100%;
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    border-radius: 7px;
+    margin-top: 60px;
+    color:${({ theme }) => theme.colors.secondary};
+    margin-bottom: 20px;
+    .header {
+        h3 {
+            font-size: 30px;
+            padding: 10px;
+        }
+    }
+    .body {
+        padding: 10px;
+        border-top: 1px solid ${({ theme }) => theme.colors.secondary};
+        span {
+            font-size: 15px;
+        }
+    }
+    .footer {
+        padding: 30px 10px;
+        border-top: 1px solid ${({ theme }) => theme.colors.secondary};
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .link {
+            margin-left: 15px;
+            font-size: 18px;
+        }
+    }
+`
 
 const Pill = styled.button`
   padding: 7px;
@@ -59,7 +100,7 @@ export default function Projects() {
 
     const [projectsData, setProjectsData] = useState([]);
 
-    const [collection, setCollection] = useState([])
+    const [collection, setCollection] = useState([]);
 
     useEffect(() => {
         setProjectsData(ProjectsInfo)
@@ -82,9 +123,68 @@ export default function Projects() {
                     >
                         <SectionTitle
                             heading="Projects"
-                            subheading="some of my recent works"
+                            subheading="Big Data and Azure cloud"
                         />
                     </motion.div>
+                    <motion.div>
+                        <ProjectBG>
+                            <Reveal>
+                                <div className='header'>
+                                    <h3>Azure F1 Big Data project</h3>
+                                </div>
+                            </Reveal>
+                            <div className='body'>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                                <img src={img} alt="arq" />
+                            </div>
+                            <div className='footer'>
+                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">GITHUB</a>
+
+                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">DOWLOAD</a>
+                            </div>
+                        </ProjectBG>
+                    </motion.div>
+
+                    <motion.div>
+                        <ProjectBG>
+                            <Reveal>
+                                <div className='header'>
+                                    <h3>Azure COVID-19 Tracker Big Data project</h3>
+                                </div>
+                            </Reveal>
+                            <div className='body'>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </span>
+                                <img src={img} alt="arq" />
+                            </div>
+                            <div className='footer'>
+                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">GITHUB</a>
+
+                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">DOWLOAD</a>
+                            </div>
+                        </ProjectBG>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 2 }}
+                    >
+                        <div className='cont-title'>
+                            <SectionTitle
+                                heading="Projects"
+                                subheading="Data Science, visualization and Python"
+                            />
+                        </div>
+                    </motion.div>
+
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
