@@ -135,39 +135,17 @@ export default function Projects() {
                             </Reveal>
                             <div className='body'>
                                 <span>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    This project is developed using the Azure Cloud Databricks service. It seeks to analyse the statistics of the entire Formula 1 history provided by Ergast API. <a href="http://ergast.com/mrd/">Visit API here.</a>
+                                    <br />
+                                    In addition to the power of Databricks we used the services of Securing credentials, securing secrets, Azure Key Vault Data provided by Azure cloud.
+                                    Databricks File System (DBFS) was used for the storage of the data, which worked as follows Delta Lake for entire application.
                                 </span>
-                                <img src={img} alt="arq" style={{marginTop:12}}/>
+                                <img src={img} alt="arq" style={{ marginTop: 12 }} />
                             </div>
                             <div className='footer'>
                                 <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 
-                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">GITHUB</a>
-
-                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">DOWLOAD</a>
-                            </div>
-                        </ProjectBG>
-                    </motion.div>
-
-                    <motion.div>
-                        <ProjectBG>
-                            <Reveal>
-                                <div className='header'>
-                                    <h3>Azure COVID-19 Tracker Big Data project</h3>
-                                </div>
-                            </Reveal>
-                            <div className='body'>
-                                <span>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </span>
-                                <img src={img} alt="arq" />
-                            </div>
-                            <div className='footer'>
-                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-
-                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">GITHUB</a>
-
-                                <a className='link' href="google.com" target="_blank" rel="noopener noreferrer">DOWLOAD</a>
+                                <a className='link' href="https://github.com/lucassingh/big-data-f1/tree/main" target="_blank" rel="noopener noreferrer">GITHUB</a>
                             </div>
                         </ProjectBG>
                     </motion.div>
