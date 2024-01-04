@@ -75,7 +75,7 @@ export default function ContactSection() {
                         <Reveal>
                             <ContactInfoItem icon={<MdLocalPhone />} text="+5493462565888" />
                             <ContactInfoItem icon={<MdEmail />} text="lucas.singh10@gmail.com" />
-                            <ContactInfoItem text="Venado Tuerto, Santa Fe,  Argentina" link='https://goo.gl/maps/iJakYCMJZvQkbf1eA' />
+                            <ContactInfoItem text="Buenos Aires, Argentina" link='https://maps.app.goo.gl/9cHJrskwJUYdmgTy7' />
                         </Reveal>
                     </div>
                 </div>

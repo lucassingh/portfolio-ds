@@ -86,22 +86,21 @@ export default function About() {
                                 <p className="about__subheading">
                                     Hi, I am <span>Lucas Singh</span>
                                 </p>
-                                <h2 className="about__heading">a Data Science Specialist</h2>
+                                <h2 className="about__heading">Azure Data Engineer</h2>
                                 <div className="about__info">
                                     <PText>
-                                        I live in Venado Tuerto, a small city in the south of the province of
-                                        Santa Fe, Argentina.
+                                        I live in the south of Buenos Aires Province.
                                         <br /> <br />
                                         I started working as a front end web developer when I started my degree in Systems Engineering.
                                         In the last few years I discovered data analysis, business intelligence and decided to specialize in this area in order to bring new knowledge to decision making.
 
                                         <br />
                                         <br />
-                                        I am looking for my first job as a Data Scientist / Data Analyst in challenging projects in various domains such as e-commerce or financial sector.
+                                        I am looking for my first job as a Data Engineer / Data Analyst in challenging projects in various domains such as e-commerce or financial sector.
                                         I define myself as a curious, proactive and always eager to learn.
                                     </PText>
                                 </div>
-                                <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1HeWEWINDlpOwU5Ky3EA7fBt1kOIwLFuJ/view?usp=sharing" outline target={false}/>
+                                <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1Lv7kg6J5W_vMJ0B2_zMT3XvpAlsYjMFk/view?usp=sharing" outline target={false}/>
                             </Reveal>
                         </div>
                         <div className="right">
@@ -134,15 +133,15 @@ export default function About() {
 
                                 <AboutInfoItem
                                     title="Extraction:"
-                                    items={['SQL', 'Excel', 'AWS']}
+                                    items={['SQL', 'Excel']}
                                 />
                                 <AboutInfoItem
                                     title="Transformation"
-                                    items={['Python', 'R language']}
+                                    items={['Python', 'Databricks']}
                                 />
                                 <AboutInfoItem
                                     title="Visualisation"
-                                    items={['Poer BI', 'Tableau']}
+                                    items={['Power BI', 'Tableau']}
                                 />
                             </Reveal>
                         </div>
@@ -170,6 +169,24 @@ export default function About() {
                                     title="2015-2016"
                                     items={['Layout Designer', 'Arsayian Foundation']}
                                 />
+                            </Reveal>
+                        </div>
+                        <div className="about__info__item">
+                            <Reveal>
+                                <h1 className="about__info__heading">Certifications</h1>
+
+                                <AboutInfoItem
+                                    title="Microsoft Certified"
+                                    items={['Power BI Data Analyst Associate']}
+                                />
+                                <AboutInfoItem
+                                    title="Microsoft Certified"
+                                    items={['Azure Data Engineer']}
+                                />
+                                <AboutInfoItem
+                                    title="Microsoft Certified"
+                                    items={['Azure Data Fundamentals']}
+                                />                                
                             </Reveal>
                         </div>
                     </div>

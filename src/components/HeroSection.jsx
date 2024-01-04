@@ -159,7 +159,7 @@ const HeroSection = () => {
                         >
                             <h1 className="hero__heading">
                                 <span className="hero__name">Lucas Singh</span>
-                                <span>Data Scientist</span>
+                                <span>Data Engineer</span>
                             </h1>
                         </motion.div>
                         <motion.div

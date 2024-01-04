@@ -53,10 +53,10 @@ export default function Map() {
                 <div className="map__card">
                     <Reveal>
                         <h3 className="map__card__heading">I am here !</h3>
-                        <PText>Venado Tuerto, Santa Fe, Argentina</PText>
+                        <PText>Buenos Aires, Argentina</PText>
                         <a
                             className="map__card__link"
-                            href="https://goo.gl/maps/iJakYCMJZvQkbf1eA"
+                            href="https://maps.app.goo.gl/9cHJrskwJUYdmgTy7"
                             target="_blank"
                             rel="noreferrer"
                         >
