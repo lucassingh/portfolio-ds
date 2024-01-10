@@ -86,7 +86,7 @@ export default function About() {
                                 <p className="about__subheading">
                                     Hi, I am <span>Lucas Singh</span>
                                 </p>
-                                <h2 className="about__heading">Azure Data Engineer</h2>
+                                <h2 className="about__heading">Power BI Data Analyst Associate</h2>
                                 <div className="about__info">
                                     <PText>
                                         I live in the south of Buenos Aires Province.
@@ -96,11 +96,11 @@ export default function About() {
 
                                         <br />
                                         <br />
-                                        I am looking for my first job as a Data Engineer / Data Analyst in challenging projects in various domains such as e-commerce or financial sector.
+                                        I am looking for my first job as a Data Analyst in challenging projects in various domains such as e-commerce or financial sector.
                                         I define myself as a curious, proactive and always eager to learn.
                                     </PText>
                                 </div>
-                                <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1Lv7kg6J5W_vMJ0B2_zMT3XvpAlsYjMFk/view?usp=sharing" outline target={false}/>
+                                <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1D7QYM_zAfM_Gdpv_L-DC5ropZby4FsX8/view?usp=sharing" outline target={false}/>
                             </Reveal>
                         </div>
                         <div className="right">
@@ -178,10 +178,6 @@ export default function About() {
                                 <AboutInfoItem
                                     title="Microsoft Certified"
                                     items={['Power BI Data Analyst Associate']}
-                                />
-                                <AboutInfoItem
-                                    title="Microsoft Certified"
-                                    items={['Azure Data Engineer']}
                                 />
                                 <AboutInfoItem
                                     title="Microsoft Certified"

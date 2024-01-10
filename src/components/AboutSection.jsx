@@ -92,13 +92,13 @@ const AboutSection = () => {
                             heading="About Me"
                         />
                         <PText>
-                            I am a Systems Engineer with a focus on data analysis and Data Engineering. 
+                            I am a Systems Engineer with a focus on data analysis. 
                             I live in the south of Buenos Aires Province, Argentina. <br />
                             I am interested in working in challenging projects and collaborative teams.<br />
                             In this website you can download my CV, see my projects and contact me for future jobs, thank you very much for your visit!
                         </PText>
                         <div className="aboutSection__buttons">
-                            <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1Lv7kg6J5W_vMJ0B2_zMT3XvpAlsYjMFk/view?usp=sharing" outline  target={false} />
+                            <ButtonPrimary btnText="Download CV" btnLink="https://drive.google.com/file/d/1D7QYM_zAfM_Gdpv_L-DC5ropZby4FsX8/view?usp=sharing" outline  target={false} />
                         </div>
                     </div>
                 </Reveal>
